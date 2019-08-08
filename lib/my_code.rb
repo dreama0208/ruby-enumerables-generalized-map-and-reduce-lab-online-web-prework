@@ -4,5 +4,5 @@ def map(source_array)
   source_array.length { |n|
     new.push (source_array[n])
   }
-  yield (new)
+  yield n
 end
