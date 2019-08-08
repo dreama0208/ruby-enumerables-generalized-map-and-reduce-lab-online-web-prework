@@ -1,4 +1,8 @@
 # Your Code Here
 def map(source_array)
-  yield source_array.map { |e| e }
+  new = []
+  source_array.length { |i|
+    new.push (source_array[i])
+  }
+  yield new
 end
